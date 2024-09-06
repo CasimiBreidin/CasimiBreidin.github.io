@@ -1,0 +1,280 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="CSS笔记"><meta name="keywords" content=""><meta name="author" content="CasimiBreidin"><meta name="copyright" content="CasimiBreidin"><title>CSS笔记 | Casimi’Blog</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  hexoVersion: '6.3.0'
+} </script><meta name="generator" content="Hexo 6.3.0"></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS%E7%AC%94%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text">CSS笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text">CSS文本属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F"><span class="toc-number">1.2.</span> <span class="toc-text">CSS引入方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%86%85%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8"><span class="toc-number">1.2.1.</span> <span class="toc-text">1、内部样式表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E8%A1%8C%E5%86%85%E6%A0%B7%E5%BC%8F%E8%A1%A8"><span class="toc-number">1.2.2.</span> <span class="toc-text">2、行内样式表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E5%A4%96%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">1.2.3.</span> <span class="toc-text">3、外部样式表（重点）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Emmet%E8%AF%AD%E6%B3%95%EF%BC%9A"><span class="toc-number">1.3.</span> <span class="toc-text">Emmet语法：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS%E7%9A%84%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.4.</span> <span class="toc-text">CSS的复合选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%90%8E%E4%BB%A3%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.4.1.</span> <span class="toc-text">1、后代选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E5%AD%90%E5%85%83%E7%B4%A0%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.4.2.</span> <span class="toc-text">2、子元素选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E5%B9%B6%E9%9B%86%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.4.3.</span> <span class="toc-text">3、并集选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81%E9%93%BE%E6%8E%A5%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.4.4.</span> <span class="toc-text">4、链接伪类选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81focus%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.4.5.</span> <span class="toc-text">5、focus选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E3%80%81%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.4.6.</span> <span class="toc-text">6、属性选择器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E7%89%87"><span class="toc-number">1.5.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS%E7%9A%84%E8%83%8C%E6%99%AF"><span class="toc-number">1.6.</span> <span class="toc-text">CSS的背景</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81background-color%EF%BC%9A"><span class="toc-number">1.6.1.</span> <span class="toc-text">1、background-color：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81background-image%EF%BC%9A"><span class="toc-number">1.6.2.</span> <span class="toc-text">2、background-image：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81background-repeat%EF%BC%9A"><span class="toc-number">1.6.3.</span> <span class="toc-text">3、background-repeat：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81background-position%EF%BC%9A"><span class="toc-number">1.6.4.</span> <span class="toc-text">4、background-position：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81background-attachment%EF%BC%9A"><span class="toc-number">1.6.5.</span> <span class="toc-text">5、background-attachment：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E3%80%81%E8%83%8C%E6%99%AF%E5%B1%9E%E6%80%A7%E5%A4%8D%E5%90%88%E5%86%99%E6%B3%95%EF%BC%9A"><span class="toc-number">1.6.6.</span> <span class="toc-text">6、背景属性复合写法：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7%E3%80%81%E8%83%8C%E6%99%AF%E8%89%B2%E5%8D%8A%E9%80%8F%E6%98%8E%EF%BC%9A"><span class="toc-number">1.6.7.</span> <span class="toc-text">7、背景色半透明：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.7.</span> <span class="toc-text">CSS盒子模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E8%BE%B9%E6%A1%86%EF%BC%88border%EF%BC%89"><span class="toc-number">1.7.1.</span> <span class="toc-text">1、边框（border）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E5%86%85%E8%BE%B9%E8%B7%9D%EF%BC%88padding%EF%BC%89"><span class="toc-number">1.7.2.</span> <span class="toc-text">2、内边距（padding）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E5%A4%96%E8%BE%B9%E8%B7%9D%EF%BC%88margin%EF%BC%89"><span class="toc-number">1.7.3.</span> <span class="toc-text">3、外边距（margin）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81%E6%B8%85%E9%99%A4%E5%86%85%E5%A4%96%E8%BE%B9%E8%B7%9D"><span class="toc-number">1.7.4.</span> <span class="toc-text">4、清除内外边距</span></a></li></ol></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://s2.loli.net/2023/03/31/Kl6pJgmODrqhzny.jpg"></div><div class="author-info__name text-center">CasimiBreidin</div><div class="author-info__description text-center"></div><div class="follow-button"><a target="_blank" rel="noopener" href="https://github.com/CasimiBreidin">Follow Me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">20</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">4</span></a></div></div></div><div id="content-outer"><div class="no-bg" id="top-container"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Casimi’Blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">主页</a><a class="site-page" href="/archives">时间轴</a><a class="site-page" href="/categories">文章分类</a><a class="site-page" href="/gallery">相册</a><a class="site-page" href="/about">关于我</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">CSS笔记</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-12-03</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">2.6k</span><span class="post-meta__separator">|</span><span>阅读时长: 9 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h1 id="CSS笔记"><a href="#CSS笔记" class="headerlink" title="CSS笔记"></a>CSS笔记</h1><p>以下选择器引用：写在head内的style内，但最好另外设置.css文件，在head声明后直接引用（这就很专业）。</p>
+<p>1、***<em>引入样式</em>***<br>2、***<em>多种选择器</em>***<br>W3C全有<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/css_selectors.asp">https://www.w3school.com.cn/cssref/css_selectors.asp</a><br>3、***<em>字体属性</em>***<br>font-family : 字体类型<br>font-style : 字体风格<br>font-size : 字体大小<br>font-weight : 字体粗细<br>line-height: 行高<br>等等</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p &#123;</span><br><span class="line">    font-size: 1.5em;</span><br><span class="line">    font-style: italic;</span><br><span class="line">    font-weight: bold;</span><br><span class="line">    font-family: &#x27;微软雅黑&#x27;,&#x27;仿宋&#x27;;</span><br><span class="line">    line-height: 50px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>合并 <code>font: italic bold 30px/50px &#39;仿宋&#39;</code><br>weight和style可以交换位置，但<br>size和family固定位置。<br>对于font: size和family一定要有，前两个（包括行高）可以不要。</p>
+<hr>          
+在head里的style中打上 
+
+<p><code>p &#123;</code></p>
+<p><code>color: red;</code></p>
+<p><code>&#125;</code></p>
+<p>则<code>&lt;p&gt;</code>内的文字都变为红色，例如<code>&lt;p&gt;网站介绍&lt;/p&gt;</code></p>
+<p><strong>类选择器：</strong></p>
+<p>可以指定某个元素赋予某个颜色等属性，而不是都变为一种颜色。</p>
+<p><code>.red &#123;</code></p>
+<p><code>color: red;</code></p>
+<p><code>&#125;</code></p>
+<p>将拥有red类等HTML元素均为红色。</p>
+<p>类命名有专业的规则，如导航：nav。</p>
+<p>多类名使用：<code>&lt;div class=&quot;class1 class2&quot;&gt;xxx&lt;/div&gt;</code>这里xxx就用了class1和class2两个类选择器。</p>
+<p><strong>id选择器</strong></p>
+<p><code>#xxx &#123;</code></p>
+<p><code>&#125;</code></p>
+<p><code>&lt;div id=&quot;xxx&quot;&gt;awdw&lt;/div&gt;</code></p>
+<p>如上，只能通过id来调用。</p>
+<p>和类选择器区别：（样式用#定义，结构id调用，<strong>只能调用一次</strong>，别人切勿使用），如这个div的id用了，别的div就不能用。</p>
+<p><strong>并集选择器</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a,p &#123;</span><br><span class="line">    font-size: 20px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>交集选择器</strong><br>两者同时满足</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a.b &#123;</span><br><span class="line">    font-size: 30px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>CSS字体属性</p>
+<p>格式px，如font-size: 20px;</p>
+<p>字体属性有很多，直接去网站搜。</p>
+<h2 id="CSS文本属性"><a href="#CSS文本属性" class="headerlink" title="CSS文本属性"></a>CSS文本属性</h2><p>color：颜色</p>
+<p>text-align：水平对齐（center，left，right）</p>
+<p>text-decoration：装饰文本，none，underline(下划线)，overline(上划线)，line-through(删除线)。</p>
+<p>text-indent：文本缩近，20px表示首行缩近20个像素，可以-20px；2em表示两个当前文字大小的距离。</p>
+<p>line-height：行间距（行高），px。</p>
+<h2 id="CSS引入方式"><a href="#CSS引入方式" class="headerlink" title="CSS引入方式"></a>CSS引入方式</h2><h3 id="1、内部样式表"><a href="#1、内部样式表" class="headerlink" title="1、内部样式表"></a>1、内部样式表</h3><p>在head中放在style中</p>
+<h3 id="2、行内样式表"><a href="#2、行内样式表" class="headerlink" title="2、行内样式表"></a>2、行内样式表</h3><p>更简单的修改样式，直接在标签内写上style，如<code>&lt;p style=&quot;color: pink;&quot;&gt;粉红色&lt;p&gt;</code></p>
+<h3 id="3、外部样式表（重点）"><a href="#3、外部样式表（重点）" class="headerlink" title="3、外部样式表（重点）"></a>3、外部样式表（重点）</h3><p>单独写个CSS文件，在html页面的head直接引用所需的CSS文件，</p>
+<p>  1、新建.css文件</p>
+<p>  2、head上通过link引入。<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;.css文件路径&quot;&gt;</code></p>
+<hr>
+
+<p>优先级：行内样式&gt;内部样式&gt;外部样式（就近原则）<br>（但<code>&lt;p class=&quot;red&quot;&gt;在国外&lt;/p&gt;</code>）优先显示红色外部样式，而非蓝色内部样式，因为就近原则？）</p>
+<h2 id="Emmet语法："><a href="#Emmet语法：" class="headerlink" title="Emmet语法："></a>Emmet语法：</h2><p>HTML自动补全熟悉点，就不再记录。<br>ul&gt;ui	补全	即补偿父子关系。</p>
+<p><code>&lt;ur&gt;</code></p>
+<p>​    <code>&lt;ui&gt;&lt;/ui&gt;</code></p>
+<p>  <code>&lt;/ur&gt;</code></p>
+<p>在CSS使用：</p>
+<p>w100   补全   width: 100px;</p>
+<p>tac       补全   text-align: center;</p>
+<p>即每个首字母即可补全。</p>
+<p>快速格式化：右键Format DOcument</p>
+<p>但可以设置自动格式化代码，逐渐变懒（设置完一旦保存就会自动格式化）。</p>
+<h2 id="CSS的复合选择器"><a href="#CSS的复合选择器" class="headerlink" title="CSS的复合选择器"></a>CSS的复合选择器</h2><h3 id="1、后代选择器"><a href="#1、后代选择器" class="headerlink" title="1、后代选择器"></a>1、后代选择器</h3><p>元素1 元素2 {   样式声明  }</p>
+<p>这样样式声明只会改动元素2。</p>
+<p>例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ol li &#123; </span><br><span class="line">color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样只有ol中的li元素变为红色。</p>
+<h3 id="2、子元素选择器"><a href="#2、子元素选择器" class="headerlink" title="2、子元素选择器"></a>2、子元素选择器</h3><p>元素1 &gt; 元素2 {   样式声明  }</p>
+<p>.nav &gt; a {</p>
+<p>​      <em>color</em>: red;</p>
+<p>​    }</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;nav&quot; &gt;</span><br><span class="line">    &lt;a href=&quot;#&quot;&gt;我是儿子&lt;/a&gt;</span><br><span class="line">    &lt;p&gt;</span><br><span class="line">      &lt;a href=&quot;#&quot;&gt;我是孙子&lt;/a&gt;</span><br><span class="line">    &lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这样会把作为儿子的a样式变为红色，孙子a（在div里的p里面）不受影响。</p>
+<p>.nav a {</p>
+<p>​      <em>color</em>: red;</p>
+<p>​    }</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;nav&quot; &gt;</span><br><span class="line">    &lt;a href=&quot;#&quot;&gt;我是儿子&lt;/a&gt;</span><br><span class="line">    &lt;p&gt;</span><br><span class="line">      &lt;a href=&quot;#&quot;&gt;我是孙子&lt;/a&gt;</span><br><span class="line">    &lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这样所有的a都变红色，不管a在第几层。</p>
+<h3 id="3、并集选择器"><a href="#3、并集选择器" class="headerlink" title="3、并集选择器"></a>3、并集选择器</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div, p &#123;</span><br><span class="line">    color=&quot;red&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样div和p元素都变为红色，改为相同元素。逗号表示”**<u>和</u>**“的意思。</p>
+<p>也可以多个元素：</p>
+<p>div,</p>
+<p>p,</p>
+<p>.pig li {</p>
+<p>color&#x3D;”red”;</p>
+<p>}</p>
+<h3 id="4、链接伪类选择器"><a href="#4、链接伪类选择器" class="headerlink" title="4、链接伪类选择器"></a>4、链接伪类选择器</h3><p>&lt;a 默认链接形式为蓝色带下划线，通过这个可以直接把生成的链接改为所需样式。</p>
+<p>1、没点击过的链接调用这个</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a:link &#123;</span><br><span class="line">      color: red;</span><br><span class="line">      text-decoration: none;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>2、已经点击（访问过的）的链接用这个</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a:visited</span><br></pre></td></tr></table></figure>
+
+<p>3、鼠标经过的那个链接</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a:hover</span><br></pre></td></tr></table></figure>
+
+<p>4、鼠标正在按下，但还没有点击下去的链接</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a:active</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="5、focus选择器"><a href="#5、focus选择器" class="headerlink" title="5、focus选择器"></a>5、focus选择器</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">input:focus &#123;</span><br><span class="line"></span><br><span class="line">color=&quot;rad&quot;;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这样点击某个input时，这个input将变为红色，提高用户体验。</p>
+<h3 id="6、属性选择器"><a href="#6、属性选择器" class="headerlink" title="6、属性选择器"></a>6、属性选择器</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[title] &#123;</span><br><span class="line">color:red;</span><br><span class="line">&#125;</span><br><span class="line">title属性为例</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a[href][title] &#123;</span><br><span class="line">        color:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样属性只有href，title两个属性的a才生效。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">下面可以</span><br><span class="line">&lt;a title=&quot;W3School Home&quot; href=&quot;http://w3school.com.cn&quot;&gt;W3School&lt;/a&gt;</span><br><span class="line">下面不行</span><br><span class="line">&lt;a href=&quot;http://w3school.com.cn&quot;&gt;W3School&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>元素显示模式转换</p>
+<p>前提：行元素（spean，a等等）不能改变大小，</p>
+<p>快元素（div等）</p>
+<p>还有行内块元素等。</p>
+<p>转换为块元素：display: block</p>
+<p>转换为行元素：display:inline</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a:link &#123;</span><br><span class="line">      color: red;</span><br><span class="line">      text-decoration: none;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样将a（行元素）转为块元素，使得链接的长宽可以调整了，因为作为行元素的链接a大小默认不大。</p>
+<p>通过上面方法可以实现这种侧边栏效果：</p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>垂直居中</p>
+<p>小技巧，css本身没有垂直居中，但可以动过代码来句中。</p>
+<p>让行高（line-height）等于盒子高度(heigh)就行。</p>
+<p>原理如图，行高包括上空隙、文字本身高度、下空隙。</p>
+<p>图片</p>
+<p>若行高比盒子高度小则偏上，行高比盒子高度大则偏下，即上空隙永远顶着顶部往下展开。</p>
+<p>图片</p>
+<h2 id="CSS的背景"><a href="#CSS的背景" class="headerlink" title="CSS的背景"></a>CSS的背景</h2><h3 id="1、background-color："><a href="#1、background-color：" class="headerlink" title="1、background-color："></a>1、background-color：</h3><p>背景颜色</p>
+<h3 id="2、background-image："><a href="#2、background-image：" class="headerlink" title="2、background-image："></a>2、background-image：</h3><p>背景图片，常用于Logo、小装饰图片或者超大图片<br>小图默认平铺整个背景（repeat）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">		width:300px;</span><br><span class="line">		height:300px</span><br><span class="line">		background-image: url(images/logo.png)</span><br><span class="line">&#125; </span><br><span class="line">//则div背景图片为logo.png</span><br><span class="line">//url也不用引号来包裹图片路径</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、background-repeat："><a href="#3、background-repeat：" class="headerlink" title="3、background-repeat："></a>3、background-repeat：</h3><p>背景平铺，属性有平铺or不平铺，沿x轴（盒子宽度为数据）平铺or沿y轴（盒子高度为数据）平铺。（图片小的话重复多个来铺满盒子）</p>
+<h3 id="4、background-position："><a href="#4、background-position：" class="headerlink" title="4、background-position："></a>4、background-position：</h3><p>背景位置。重点。通过这个，可以把背景图片logo和文字对齐。</p>
+<p>如果直接用img的话，图片可能对不齐文字，所以可以背景图片和背景位置等。</p>
+<p>例子<code>background-position: left center;</code></p>
+<p>图片相对盒子向最左靠拢，水平居中，两个属性不分先后顺序。</p>
+<p><code>background-position: 20px 50px;</code></p>
+<p><code>background-position: 20px center;</code></p>
+<p>图片，如图这个就可以用背景图片和背景位置了。</p>
+<h3 id="5、background-attachment："><a href="#5、background-attachment：" class="headerlink" title="5、background-attachment："></a>5、background-attachment：</h3><p>背景图片随着鼠标或者滚动固定，scroll滚动，fixed固定。</p>
+<h3 id="6、背景属性复合写法："><a href="#6、背景属性复合写法：" class="headerlink" title="6、背景属性复合写法："></a>6、背景属性复合写法：</h3><p>background：背景颜色	背景图片地址	背景平铺	背景图像滚动	背景图片位置；</p>
+<p>例子 <code>background: black url(images/logo.png) no-repeat fixed center top;</code></p>
+<p>后两个center和top是背景图片位置的两个值。</p>
+<h3 id="7、背景色半透明："><a href="#7、背景色半透明：" class="headerlink" title="7、背景色半透明："></a>7、背景色半透明：</h3><p><code>background: rgba(0, 0, 0, 0.3);</code></p>
+<p>最后一个参数是alpha透明度，范围是0～1。</p>
+<hr>
+
+<h2 id="CSS盒子模型"><a href="#CSS盒子模型" class="headerlink" title="CSS盒子模型"></a>CSS盒子模型</h2><h3 id="1、边框（border）"><a href="#1、边框（border）" class="headerlink" title="1、边框（border）"></a>1、边框（border）</h3><p>border-width: 5px； &#x2F;&#x2F;边框的粗细</p>
+<p>border-style： &#x2F;&#x2F; solid 实线边框，dashed 虚线边框，dotted 点线边框等等等等。</p>
+<p>border-color：&#x2F;&#x2F;边框的颜色</p>
+<p>border复合写法，同时参数顺序不影响，例子</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">border: 2px solid red;</span><br><span class="line">border-Top: 10px dashed pink;  &lt;!-- 设置上边框 --&gt;</span><br></pre></td></tr></table></figure>
+
+<p>表格的边框也可以通过border来改。</p>
+<h3 id="2、内边距（padding）"><a href="#2、内边距（padding）" class="headerlink" title="2、内边距（padding）"></a>2、内边距（padding）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">padding-left: 5px   &lt;!-- 设置左边距 --&gt;</span><br></pre></td></tr></table></figure>
+
+<p>padding复合写法</p>
+<table>
+<thead>
+<tr>
+<th>值的个数</th>
+<th>表达意思</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>padding: 5px;</td>
+<td>1个值，代表<strong>上下左右</strong>都有5px内边距；</td>
+</tr>
+<tr>
+<td>padding: 5px 10px;</td>
+<td>2个值，代表<strong>上下</strong>内边距5px，<strong>左右</strong>内边距10px；</td>
+</tr>
+<tr>
+<td>padding: 5px 10px 20px;</td>
+<td>3个值，代表<strong>上</strong>内边距5px，<strong>左右</strong>内边距10px，<strong>下</strong>内边距20px；</td>
+</tr>
+<tr>
+<td>padding: 5px 10px 20px 30px;</td>
+<td>4个值，顺时针，上5px，右10px，下20px，左30px；</td>
+</tr>
+</tbody></table>
+<p>加了内边距后盒子也会变大，即内边距撑开了盒子，所以要使盒子大小不变，可以让盒子长宽（width&#x2F;height）减去内边距。</p>
+<p>应用场景：顶部导航栏，不用padding，不同字数用同一大小的盒子，字数少的空隙很多，这时用paddding就可以撑开同样大小的空隙（即字数不同有着同样的空隙）。</p>
+<h3 id="3、外边距（margin）"><a href="#3、外边距（margin）" class="headerlink" title="3、外边距（margin）"></a>3、外边距（margin）</h3><p>两盒子之间的距离。</p>
+<p>让块级盒子水平居中：盒子指定width，左右外边距设置为auto</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">width: 90px;</span><br><span class="line">margin:0 auto;  /* 上下没有外边距，左右外边距auto */</span><br></pre></td></tr></table></figure>
+
+<p>外边距合并：嵌套块元素塌陷</p>
+<p>两个嵌套关系（父子关系）的块元素，父元素已有上外边距，本想给子元素设置上外边距，让子元素向下移，结果父元素也会跟着塌陷下来。</p>
+<p>解决方法：</p>
+<p>1、给父元素设置个上边框（可以设置为透明的）。</p>
+<p>2、给父元素设置个上内边距。</p>
+<p>3、给父元素添加<strong>overflow:hidden</strong>（这个不会让盒子增大）</p>
+<h3 id="4、清除内外边距"><a href="#4、清除内外边距" class="headerlink" title="4、清除内外边距"></a>4、清除内外边距</h3><p>默认会自带外边距等不同的边距，下面代码自动适用所有元素，出生都不带内外边距了，方便布局。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">      padding: 0;  /* 清除内边距 */</span><br><span class="line">      margin: 0;   /* 清除外边距 */</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>边距综合案例：</p>
+<p>图片</p>
+<p>CSS3圆角边框</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">border-radius: 10px;</span><br><span class="line">border-radius: 50%;   /* 这样变成圆形 */</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>盒子阴影</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>H-shadow</td>
+<td>**<u>必需</u>**。水平阴影的位置，允许负值。</td>
+</tr>
+<tr>
+<td>V-shadow</td>
+<td>**<u>必需</u>**。垂直阴影的位置，允许负值。</td>
+</tr>
+<tr>
+<td>Blur</td>
+<td>可选。模糊程度，0就是纯实。</td>
+</tr>
+<tr>
+<td>Spread</td>
+<td>可选。阴影尺寸，</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>可选。阴影的颜色。一般用rgba(0, 0, 0, 0.3) 半透明</td>
+</tr>
+<tr>
+<td>Inset</td>
+<td>可选。将外部阴影改为内部阴影。</td>
+</tr>
+</tbody></table>
+<p><code>box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3) a;</code></p>
+<p>外 xx定位，内 相对定位。<br>块状元素可以包含内联元素，反过来不行。<br>块状元素和内联元素可以转换，所以&lt;a不一定是内联元素！</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">CasimiBreidin</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blognotes.cn/posts/48700.html">https://blognotes.cn/posts/48700.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blognotes.cn">Casimi’Blog</a>！</span></div></div><div class="post-meta__tag-list"></div><nav id="pagination"><div class="prev-post pull-left"><a href="/posts/23710.html"><i class="fa fa-chevron-left">  </i><span>毕设的一些问题</span></a></div><div class="next-post pull-right"><a href="/posts/17121.html"><span>HTML笔记</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2019 - 2024 By CasimiBreidin</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">hitokoto</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script></body></html>

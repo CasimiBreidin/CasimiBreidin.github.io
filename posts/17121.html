@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="HTML笔记"><meta name="keywords" content=""><meta name="author" content="CasimiBreidin"><meta name="copyright" content="CasimiBreidin"><title>HTML笔记 | Casimi’Blog</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  hexoVersion: '6.3.0'
+} </script><meta name="generator" content="Hexo 6.3.0"></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML%E5%85%A5%E9%97%A8%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text">HTML入门视频笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.0.1.</span> <span class="toc-text">前言</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80"><span class="toc-number">1.1.</span> <span class="toc-text">基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#img%E6%A0%87%E7%AD%BE"><span class="toc-number">1.1.1.</span> <span class="toc-text">img标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84%E4%B9%8B%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%EF%BC%9A"><span class="toc-number">1.1.2.</span> <span class="toc-text">路径之相对路径：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5%E6%A0%87%E7%AD%BE-a"><span class="toc-number">1.1.3.</span> <span class="toc-text">超链接标签 a</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E9%87%8A%E6%A0%87%E7%AD%BE%E5%92%8C%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6"><span class="toc-number">1.1.4.</span> <span class="toc-text">注释标签和特殊字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VSCode%E4%BD%BF%E7%94%A8Live-Server%E7%9A%84Go-live-%E6%B3%A8%E6%84%8F%E7%82%B9%EF%BC%9A"><span class="toc-number">1.1.5.</span> <span class="toc-text">VSCode使用Live Server的Go live 注意点：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE"><span class="toc-number">1.1.6.</span> <span class="toc-text">表格标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E6%A0%87%E7%AD%BE"><span class="toc-number">1.1.7.</span> <span class="toc-text">列表标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">1.1.7.1.</span> <span class="toc-text">1、无序列表（重点）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">1.1.7.2.</span> <span class="toc-text">2、有序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%97%E8%A1%A8%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">1.1.7.3.</span> <span class="toc-text">3、自定义列表（重点）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE"><span class="toc-number">1.1.8.</span> <span class="toc-text">表单标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E8%A1%A8%E5%8D%95%E5%9F%9F%EF%BC%88%E5%BF%85%E5%A4%87%EF%BC%89"><span class="toc-number">1.1.8.1.</span> <span class="toc-text">1、表单域（必备）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#form%E6%A0%87%E7%AD%BE%EF%BC%9A"><span class="toc-number">1.1.8.1.1.</span> <span class="toc-text">form标签：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81input%E8%BE%93%E5%85%A5%E8%A1%A8%E5%8D%95%E5%85%83%E7%B4%A0"><span class="toc-number">1.1.8.2.</span> <span class="toc-text">2、input输入表单元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#type%E5%B1%9E%E6%80%A7"><span class="toc-number">1.1.8.3.</span> <span class="toc-text">type属性:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81label%E6%A0%87%E7%AD%BE"><span class="toc-number">1.1.8.4.</span> <span class="toc-text">3、label标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81select%E4%B8%8B%E6%8B%89%E8%A1%A8%E5%8D%95%E5%85%83%E7%B4%A0"><span class="toc-number">1.1.8.5.</span> <span class="toc-text">4、select下拉表单元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5%E3%80%81textarea%E6%96%87%E6%9C%AC%E5%9F%9F%E5%85%83%E7%B4%A0"><span class="toc-number">1.1.8.6.</span> <span class="toc-text">5、textarea文本域元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6%E3%80%81datelist-%E6%96%B0%E5%A2%9E%E8%A1%A8%E5%8D%95%E5%85%83%E7%B4%A0"><span class="toc-number">1.1.8.7.</span> <span class="toc-text">6、datelist(新增表单元素)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E9%98%85%E6%96%87%E6%A1%A3"><span class="toc-number">1.1.9.</span> <span class="toc-text">查阅文档</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E8%A8%80"><span class="toc-number">1.1.10.</span> <span class="toc-text">后言</span></a></li></ol></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://s2.loli.net/2023/03/31/Kl6pJgmODrqhzny.jpg"></div><div class="author-info__name text-center">CasimiBreidin</div><div class="author-info__description text-center"></div><div class="follow-button"><a target="_blank" rel="noopener" href="https://github.com/CasimiBreidin">Follow Me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">20</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">4</span></a></div></div></div><div id="content-outer"><div class="no-bg" id="top-container"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Casimi’Blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">主页</a><a class="site-page" href="/archives">时间轴</a><a class="site-page" href="/categories">文章分类</a><a class="site-page" href="/gallery">相册</a><a class="site-page" href="/about">关于我</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">HTML笔记</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-12-01</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">2.3k</span><span class="post-meta__separator">|</span><span>阅读时长: 9 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h1 id="HTML入门视频笔记"><a href="#HTML入门视频笔记" class="headerlink" title="HTML入门视频笔记"></a>HTML入门视频笔记</h1><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>​	这只是后续粗略复习用的，且从img标签开始记录，因为前面很基础，且从img才打算记笔记（基础为上课所记）。</p>
+<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p>&lt;b      加粗<br>&lt;i      斜体<br><code>&amp;nbsp; </code>  空格</p>
+<h3 id="img标签"><a href="#img标签" class="headerlink" title="img标签"></a>img标签</h3><p><code> &lt;img src=&quot;F:/BaiduNetdiskDownload/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/docs/%E5%9B%BE%E5%83%8FURL&quot; alt=&quot;not404&quot; /&gt;</code><br>&#x2F;&#x2F; 图像没显示出来，则用alt的文字来显示</p>
+<p>alt     文本    替换文本。图像不能显示的文字</p>
+<p>title  文本    提示文本。鼠标放到图像上，显示的文字</p>
+<p>width、height、border 设置大小，边框粗细。</p>
+<h3 id="路径之相对路径："><a href="#路径之相对路径：" class="headerlink" title="路径之相对路径："></a>路径之相对路径：</h3><p>同一级路径	img src&#x3D;”img.jpg”</p>
+<p>下一级路径	img src&#x3D;”images&#x2F;img.jpg”</p>
+<p>上一级路径	img src&#x3D;”..&#x2F;img.jpg”。（html文件下有xx.html要用图像，而图像在images文件，和html文件同一级。上两级为..&#x2F;..&#x2F;img.jpg）</p>
+<p>路径之绝对路径：</p>
+<p>放在电脑某个位置或者网址</p>
+<h3 id="超链接标签-a"><a href="#超链接标签-a" class="headerlink" title="超链接标签 a"></a>超链接标签 a</h3><p><strong>1、外部链接：</strong><code>&lt;a href=&quot;&quot; target=&quot;目标窗口的弹出方式&quot;&gt;文本或图像&lt;/a&gt;</code></p>
+<p>_blank好点，为在新窗口打开链接；<br>_self默认</p>
+<p><strong>2、内部链接：</strong>两个html：公司简介.html， 简介页面.html。</p>
+<p>即在gsjj.html打上<code>&lt;a href=&quot;简介页面.html&quot;&gt;公司简介&lt;/a&gt;</code></p>
+<p>跳转到另一个页面的锚点:<br><em>本页面</em><br><code>&lt;a href=&quot;fitst.html#foot&quot;&gt;跳转到另一页面的锚点&lt;/a&gt;</code><br><em>first页面，锚点设置，使用a标签，属性name设置</em><br> <code>&lt;a name=&quot;foot&quot;&gt;hello world&lt;/a&gt;</code></p>
+<p><strong>3、空链接：</strong><code>&lt;a href=&quot;#&quot;&gt;公司简介&lt;/a&gt;</code></p>
+<p><strong>4、下载链接：</strong>地址链接的是zip等压缩包形式或者是文件.exe</p>
+<p><code>&lt;a href=&quot;img.zip&quot;&gt;下载文件&lt;/a&gt;</code></p>
+<p><strong>5、网页元素链接：</strong>文本、图像、音频、表格、视频等都可以放在href里。</p>
+<p><strong>6、锚点链接：</strong>点击链接后，可以快速定位到页面中的某个位置。</p>
+<ol>
+<li>在href属性中，设置属性值为#名字的形式，如<code>&lt;a href=&quot;#live&quot;&gt;个人生活&lt;/a&gt;</code></li>
+<li><code>&lt;h3 id=&quot;live&quot;&gt;个人生活&lt;/h3&gt;</code> 给个名字为live的id，这样就可以跳转到h3 个人生活上。</li>
+</ol>
+<h3 id="注释标签和特殊字符"><a href="#注释标签和特殊字符" class="headerlink" title="注释标签和特殊字符"></a>注释标签和特殊字符</h3><p><code>&lt;!-- 注释语句 --&gt;</code>command + &#x2F;</p>
+<p>空格：<code>&amp;nbsp;</code> (一个代表一个空格)</p>
+<p>&lt;： 等等</p>
+<h3 id="VSCode使用Live-Server的Go-live-注意点："><a href="#VSCode使用Live-Server的Go-live-注意点：" class="headerlink" title="VSCode使用Live Server的Go live 注意点："></a>VSCode使用Live Server的Go live 注意点：</h3><p>若要改变要预览文件的html，先F1，点击Live Server:Change Live Server Workspace，选择要预览的文件</p>
+<p>这样才不会出现只会go live 某个固定的文件页面。</p>
+<hr>
+<h3 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h3><p>表格不是用来布局页面的，而是展示数据的</p>
+<p><strong>1、</strong><code>&lt;table&gt;       &lt;tr&gt;&lt;td&gt;姓名&lt;/td&gt;   &lt;td&gt;性别&lt;/td&gt;  &lt;td&gt;年龄&lt;/td&gt;&lt;/tr&gt;       &lt;tr&gt;&lt;td&gt;刘德华&lt;/td&gt;  &lt;td&gt;男&lt;/td&gt;   &lt;td&gt;56&lt;/td&gt;&lt;/tr&gt;       &lt;tr&gt;&lt;td&gt;张学友&lt;/td&gt;  &lt;td&gt;男&lt;/td&gt;   &lt;td&gt;56&lt;/td&gt;&lt;/tr&gt;       &lt;tr&gt;&lt;td&gt;黎明&lt;/td&gt;    &lt;td&gt;男&lt;/td&gt;   &lt;td&gt;56&lt;/td&gt;&lt;/tr&gt;       &lt;tr&gt;&lt;td&gt;郭富城&lt;/td&gt;  &lt;td&gt;男&lt;/td&gt;   &lt;td&gt;56&lt;/td&gt;&lt;/tr&gt;     &lt;/table&gt;</code></p>
+<table>
+    <tr><td>姓名</td>   <td>性别</td>  <td>年龄</td></tr>
+    <tr><td>刘德华</td>  <td>男</td>   <td>56</td></tr>
+    <tr><td>张学友</td>  <td>男</td>   <td>56</td></tr>
+    <tr><td>黎明</td>    <td>男</td>   <td>56</td></tr>
+    <tr><td>郭富城</td>  <td>男</td>   <td>56</td></tr>
+  </table>
+
+<p>tr表示行，td表示具体个体。th替换td，则文字会加粗和居中。<br>rowspan&#x3D;”3” 垂直合并3个单元格，水平方向为colspan，td 属性。<br>注意：想要把表头th与下面td合并，则要去除&lt;thead和&lt;tbody,不然有这个分界无法合并。</p>
+<p>表格结构标签</p>
+<p>thead表示表头区域（姓名、性别、年龄一行）一定有tr，tbody表示表哥主体。即分成头和身体。</p>
+<p><code>  &lt;table&gt;     &lt;thead&gt;         &lt;tr&gt;&lt;td&gt;姓名&lt;/td&gt;   &lt;td&gt;性别&lt;/td&gt;  &lt;td&gt;年龄&lt;/td&gt;&lt;/tr&gt;     &lt;/thead&gt;     &lt;tbody&gt;         &lt;tr&gt;&lt;td&gt;刘德华&lt;/td&gt;  &lt;td&gt;男&lt;/td&gt;   &lt;td&gt;56&lt;/td&gt;&lt;/tr&gt;         &lt;tr&gt;&lt;td&gt;张学友&lt;/td&gt;  &lt;td&gt;男&lt;/td&gt;   &lt;td&gt;56&lt;/td&gt;&lt;/tr&gt;         &lt;tr&gt;&lt;td&gt;黎明&lt;/td&gt;    &lt;td&gt;男&lt;/td&gt;   &lt;td&gt;56&lt;/td&gt;&lt;/tr&gt;         &lt;tr&gt;&lt;td&gt;郭富城&lt;/td&gt;  &lt;td&gt;男&lt;/td&gt;   &lt;td&gt;56&lt;/td&gt;&lt;/tr&gt;     &lt;/tbody&gt;   &lt;/table&gt;</code></p>
+<h3 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签"></a>列表标签</h3><p><img src="https://raw.githubusercontent.com/1073015375/PicGo/master/img/F3B08C39F1958F2C14BFFCD1842EC97C.png"></p>
+<h4 id="1、无序列表（重点）"><a href="#1、无序列表（重点）" class="headerlink" title="1、无序列表（重点）"></a>1、无序列表（重点）</h4><p><img src="https://raw.githubusercontent.com/1073015375/PicGo/master/img/9A74CF049E11E69064C16F6C18B01881.png"></p>
+<p><img src="https://raw.githubusercontent.com/1073015375/PicGo/master/img/69FEABC1-45DA-4185-B203-E884CDEEB48B.png"></p>
+<p><code>&lt;ul&gt;</code></p>
+<p>​    <code>&lt;li&gt;榴莲&lt;/li&gt;</code></p>
+<p>​    <code>&lt;li&gt;臭豆腐&lt;/li&gt;</code></p>
+<p>​    <code>&lt;li&gt;螺狮粉&lt;/li&gt;</code></p>
+<p>  <code>&lt;/ul&gt;</code></p>
+<ul>
+<li>榴莲</li>
+<li>臭豆腐</li>
+<li>螺狮粉</li>
+</ul>
+<p><code>&lt;ul&gt; type属性有disc，square，circle，默认disc。 square为实心方格，circle为空心圆，disc实心圆。</code></p>
+<hr>
+<p>注意：<code>&lt;ul&gt;中只能放&lt;li&gt;，不能放&lt;p&gt;什么的，但&lt;li&gt;可以随便放标签&lt;p&gt;等。</code><br>列表嵌套（在&lt;li中嵌套列表）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">    &lt;li&gt;吃饭</span><br><span class="line">        &lt;ul&gt;</span><br><span class="line">            &lt;li&gt;包子&lt;/li&gt;</span><br><span class="line">            &lt;li&gt;豆浆&lt;/li&gt;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">    &lt;/li&gt;</span><br><span class="line">    &lt;li&gt;上课&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;继续吃饭&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+
+<ol>
+        <li>吃饭
+            <ul>
+                <li>包子</li>
+                <li>豆浆</li>
+            </ul>
+        </li>
+        <li>上课</li>
+        <li>继续吃饭</li>
+    </ol>
+
+<h4 id="2、有序列表"><a href="#2、有序列表" class="headerlink" title="2、有序列表"></a>2、有序列表</h4><p><code>&lt;ol&gt;</code></p>
+<p>​    <code>&lt;li&gt;榴莲&lt;/li&gt;</code></p>
+<p>​    <code>&lt;li&gt;臭豆腐&lt;/li&gt;</code></p>
+<p>​    <code>&lt;li&gt;螺狮粉&lt;/li&gt;</code></p>
+<p>  <code>&lt;/ol&gt;</code></p>
+<ol>
+<li>榴莲</li>
+<li>臭豆腐</li>
+<li>螺狮粉</li>
+</ol>
+<p><code>&lt;ol&gt; type属性有1，a，A，i，I，默认为1，即按照阿拉伯数字排列，使用a即为 a.xxx b.xxx c.xxx</code><br>注意：<code>&lt;ol&gt;也是只能放&lt;li&gt;，有序列表一般用CSS做。</code></p>
+<h4 id="3、自定义列表（重点）"><a href="#3、自定义列表（重点）" class="headerlink" title="3、自定义列表（重点）"></a>3、自定义列表（重点）</h4><p><img src="https://raw.githubusercontent.com/1073015375/PicGo/master/img/D8E4DA79C0E56714AB40400D9136FA73.png"></p>
+<p>如图，外面是dl，关注我们是dt，新浪微博、官方微信、联系我们是dd</p>
+<p>  <code>&lt;dl&gt;</code></p>
+<p>​    <code>&lt;dt&gt;关注我们&lt;/dt&gt;</code></p>
+<p>​    <code>&lt;dd&gt;新浪微博&lt;/dd&gt;</code></p>
+<p>​    <code>&lt;dd&gt;官方微信&lt;/dd&gt;</code></p>
+<p>​    <code>&lt;dd&gt;联系我们&lt;/dd&gt;</code></p>
+<p>  <code>&lt;/dl&gt;</code></p>
+<p>注意：<code>&lt;dl&gt;也是只有放&lt;dt&gt;</code></p>
+<h3 id="表单标签"><a href="#表单标签" class="headerlink" title="表单标签"></a>表单标签</h3><h4 id="1、表单域（必备）"><a href="#1、表单域（必备）" class="headerlink" title="1、表单域（必备）"></a>1、表单域（必备）</h4><p><code>&lt;form&gt; </code>把它范围内的表单元素信息提交给服务器。</p>
+<p><code>&lt;form action=&quot;demo.php&quot; method=&quot;POST&quot; name=&quot;name1&quot;&gt;</code></p>
+<p>​    <code>内容</code></p>
+<p>  <code>&lt;/form&gt;</code></p>
+<p><img src="https://raw.githubusercontent.com/1073015375/PicGo/master/img/640640112C6362DECD3446F94EE21B45.png"></p>
+<h5 id="form标签："><a href="#form标签：" class="headerlink" title="form标签："></a>form标签：</h5><p><strong>method：GET（默认），POST。</strong><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;get请求时，会将对应的含有name属性的字段将其中的value值按照’参名&#x3D;value’,多个参数值（用户名和密码）提交时之间用&amp;相连接。<br><strong>action：提交的路径，默认提交到本页面</strong><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</p>
+<ul>
+<li>绝对 URL - 指向另一个网站（比如 action&#x3D;”<a target="_blank" rel="noopener" href="http://www.example.com/example.htm%22%EF%BC%89">http://www.example.com/example.htm&quot;）</a></li>
+<li>相对 URL - 指向网站内的一个文件（比如 action&#x3D;”example.htm”）<br>action&#x3D;”demo-form.php”，即表单数据将被发送到服务器上的“demo-form.php”。</li>
+</ul>
+<h4 id="2、input输入表单元素"><a href="#2、input输入表单元素" class="headerlink" title="2、input输入表单元素"></a>2、input输入表单元素</h4><p><code>&lt;form &gt;</code></p>
+<p>​    <code>用户名：&lt;input type=&quot;text&quot;&gt; &lt;br&gt;</code>    </p>
+<p>​    <code>密码：&lt;input type=&quot;hidden&quot;&gt; &lt;br&gt;</code></p>
+<p>  <code>&lt;/form&gt;</code></p>
+<h4 id="type属性"><a href="#type属性" class="headerlink" title="type属性:"></a>type属性:</h4><p><strong>radio</strong>:变为单选框，如上方图片性别选择（同一组name一样，并分别给不同value）；<br>type&#x3D;”radio” name&#x3D;”相同值” value&#x3D;”不同值”</p>
+<p><strong>checkbox</strong>：多选，如上方喜欢的类型，一个类型对于一个input，都要设置type，name，value。</p>
+<p><strong>date</strong>：上方生日框，显示格式为yyyy&#x2F;mm&#x2F;dd;</p>
+<p><strong>file</strong>:上传文件；</p>
+<p><strong>submit</strong>：提交；</p>
+<p><strong>reset</strong>：重置键，form表单域回到初始状态</p>
+<p>例子：<code>&lt;input type=&quot;submit&quot; value=&quot;免费注册&quot;&gt;</code> 注册按钮，把form内的元素提交给服务器。</p>
+<p>所以要实现各种按钮，给type不同的属性，文字就写在value。 </p>
+<h4 id="3、label标签"><a href="#3、label标签" class="headerlink" title="3、label标签"></a>3、label标签</h4><p>label绑定一个表单元素，这样当点击label内的文本时，就会做出反应。</p>
+<p>​    <code>&lt;label for=&quot;password&quot;&gt; 密码：&lt;/label&gt;&lt;input type=&quot;text&quot; id=&quot;password&quot;&gt;</code> 密码两字加了label标签后，点击汉字也能跳到输入框input（这里label的for为input的id）</p>
+<p>label也有属性，如for等。</p>
+<h4 id="4、select下拉表单元素"><a href="#4、select下拉表单元素" class="headerlink" title="4、select下拉表单元素"></a>4、select下拉表单元素</h4><p> &#96;<form></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">籍贯: </span><br><span class="line">&lt;select&gt;</span><br><span class="line">  &lt;option&gt;山东&lt;/option&gt;</span><br><span class="line">  &lt;option&gt;北京&lt;/option&gt;</span><br><span class="line">  &lt;option&gt;天津&lt;/option&gt;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
+
+</form>`
+
+<h4 id="5、textarea文本域元素"><a href="#5、textarea文本域元素" class="headerlink" title="5、textarea文本域元素"></a>5、textarea文本域元素</h4><p>输入内容较多时，不能用文本框表单了，用这个来实现多行文本输入。</p>
+<p>  <code>&lt;form&gt;</code></p>
+<p>​    <code>网站介绍：</code></p>
+<p>​    <code>&lt;textarea &gt;</code></p>
+<p>​      </p>
+<p>​    <code>&lt;/textarea&gt;</code></p>
+<p>  <code>&lt;/form&gt;</code></p>
+<p>制作注册页面就可以使用上面这些元素，记得用在table，这样每行就会对齐（见1、表单域下面的图）</p>
+<h4 id="6、datelist-新增表单元素"><a href="#6、datelist-新增表单元素" class="headerlink" title="6、datelist(新增表单元素)"></a>6、datelist(新增表单元素)</h4><p>具有下拉选择和输入两种功能，</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;datelist&gt;</span><br><span class="line">    &lt;option&gt;xxx&lt;/option&gt;</span><br><span class="line">    &lt;option&gt;yyy&lt;/option&gt;</span><br><span class="line">&lt;/datelist&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查阅文档"><a href="#查阅文档" class="headerlink" title="查阅文档"></a>查阅文档</h3><ul>
+<li>W3C：<a href="">https://www.w3school.com.cn/index.html</a></li>
+<li>MDN：<a href="">https://developer.mozilla.org/zh-CN/docs/Web/HTML</a></li>
+</ul>
+<h3 id="后言"><a href="#后言" class="headerlink" title="后言"></a>后言</h3><p>大概了解HTML后感叹到，博客主题的html文件终于会看懂一些了！之前想把主题的底部加一些字，愣是不会。</p>
+<p>后面CSS可能就会改元素属性啦。</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">CasimiBreidin</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blognotes.cn/posts/17121.html">https://blognotes.cn/posts/17121.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blognotes.cn">Casimi’Blog</a>！</span></div></div><div class="post-meta__tag-list"></div><nav id="pagination"><div class="prev-post pull-left"><a href="/posts/48700.html"><i class="fa fa-chevron-left">  </i><span>CSS笔记</span></a></div><div class="next-post pull-right"><a href="/posts/23727.html"><span>Android Studio安装到连接模拟器</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2019 - 2024 By CasimiBreidin</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">hitokoto</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script></body></html>
